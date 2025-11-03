@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://contact-dync.onrender.com';
+const API_URL = import.meta.env.VITE_API_URL || 'https://contact-dync.onrender.com';
 axios.defaults.baseURL = API_URL;
 
 const api = axios.create({
